@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script src="Mycal.js"></script>
+</head>
+<body>
+	<h3 style="text-align: center;">History<div id="History"></div></h3>
+	<table border="2" align="center" id="table">
+		<td colspan="4">
+			<input type="text" id="ans" class="textfield">
+		</td>
+		<tr>
+			<td><input type="button" id="td" value="CE" onclick="clearInput()"></td>
+			<td><input type="button" id="td" value="C" onclick="clearInput()"></td>
+			<td><input type="button" id="td" value="⌫" onclick="removeLast()"></td>
+			<td><input type="button" id="td" value="%" onclick="operation('%')"></td>
+		</tr>
+		<tr>
+			<td><input type="button" id="td" value="7" onclick="Add(7)" id="td"></td>
+			<td><input type="button" id="td" value="8" onclick="Add(8)"></td>
+			<td><input type="button" id="td" value="9" onclick="Add(9)"></td>
+			<td><input type="button" id="td" value="X" onclick="operation('X')"></td>
+		</tr>
+		<tr>
+			<td><input type="button" id="td" value="4" onclick="Add(4)"></td>
+			<td><input type="button" id="td" value="5" onclick="Add(5)"></td>
+			<td><input type="button" id="td" value="6" onclick="Add(6)"></td>
+			<td><input type="button" id="td" value="-" onclick="operation('-')"></td>
+		</tr>
+		<tr>
+			<td><input type="button" id="td" value="1" onclick="Add(1)"></td>
+			<td><input type="button" id="td" value="2" onclick="Add(2)"></td>
+			<td><input type="button" id="td" value="3" onclick="Add(3)"></td>
+			<td><input type="button" id="td" value="+" onclick="operation('+')"></td>
+		</tr>
+		<tr>
+			<td><input type="button" id="td" value="/" onclick="operation('/')"></td>
+			<td><input type="button" id="td" value="0" onclick="Add(0)"></td>
+			<td><input type="button" id="td" value="." onclick="Add('.')"></td>
+			<td><input type="button" id="td" value="=" onclick="equal()"></td>
+		</tr>
+	</table>
+	<style type="text/css">
+		.textfield{
+			border: 3px solid black;
+			border-radius: 3px;
+			padding: 20px;
+			margin: auto;
+			width: 380px;
+		}
+		#tr{
+			margin-left: 5px;
+
+		}
+		#td{
+			width: 100px;
+			height: 100px;
+		}
+		#table{
+			border-radius: 2px;
+			border: 2px;
+
+		}
+	</style> 
+</body>
+</html>
